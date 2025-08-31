@@ -1,0 +1,51 @@
+{
+  "manifestVersion": 1,
+  "id": "ChronosTrack-DevOps",
+  "publisher": "ChronosTrack-DevOps",
+  "version": "1.0.1",
+  "name": "ChronosTrack-DevOps",
+  "description": "Azure DevOps extension for time logging",
+  "categories": [
+    "Azure Repos",
+    "Azure Boards",
+    "Azure Pipelines",
+    "Azure Test Plans",
+    "Azure Artifacts"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services.Cloud"
+    }
+  ],
+  "icons": {
+    "default": "logo.png"
+  },
+  "content": {
+    "details": {
+      "path": "overview.md"
+    }
+  },
+  "files": [
+    {
+      "path": "static",
+      "addressable": true
+    },
+    {
+      "path": "dist",
+      "addressable": true
+    }
+  ],
+  "contributions": [
+    {
+      "id": "chronos-workhub",
+      "type": "ms.vss-web.hub",
+      "targets": [
+        "ms.vss-work-web.work-hub-group" 
+      ],
+      "properties": {
+        "name": "ChronosTrack Hub",
+        "uri": "dist/work-hub-group.html"
+      }
+    }
+  ]
+}

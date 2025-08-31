@@ -1,0 +1,32 @@
+{
+    "include": ["src", "types", "./global.d.ts"],
+    "compilerOptions": {
+       // "charset": "utf8",
+        "experimentalDecorators": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "noImplicitThis": true,
+        "strict": true,
+        "target": "es6",
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "jsx": "react",
+        "lib": [
+          "es5",
+          "es6",
+          "dom",
+          "esnext",
+        ],
+        "types": [
+          "react",
+          "jest",
+          "node"
+        ],
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+    }
+}
